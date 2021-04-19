@@ -12,9 +12,6 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        shell: cmd
     steps:
     - uses: actions/checkout@v2
     - name: Setup Node
@@ -23,7 +20,7 @@ jobs:
         node-version: '15.x'
     - name: yarn install
       run: yarn install
-      shell: cmd
+   
     - name: yarn workspace server delete stuff
       run: yarn workspace server delete stuff
-      shell: cmd
+    
