@@ -21,6 +21,9 @@ jobs:
     - name: yarn install
       run: yarn install
    
-    - name: yarn workspace server delete stuff
-      run: yarn workspace server delete stuff
+    # - name: yarn workspace server delete stuff
+    #   run: yarn workspace server delete stuff
+    - name: run script
+      run: packages/server/routes/app.ts
+      
     

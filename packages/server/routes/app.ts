@@ -1,1 +1,5 @@
-console.log("hi there");
+function shout() {
+  console.log("shout");
+}
+
+shout();
